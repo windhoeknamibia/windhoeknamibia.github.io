@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
+h1, h2, h3, h4 {
+    color: tomato;
+}
+#main-header {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: auto;
+    height: 100vh;
+    background: #000 url('https://timbuktutravel.imgix.net/2019/02/0-General-windhoek-namibia-timbuktu-travel.jpg?auto=compress%2Cformat&ixlib=php-1.1.0&q=50') no-repeat center;
+    background-size: cover;
+}
+
+#title {
+    color: rgb(228, 218, 216);
+    padding-top: 20px;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 4px;
+}
+/*whk-intro*/
+.whk-intro > h2{
+    display: flex;
+    justify-content: center;
+    
+}
+.whk-h2 {
+    padding: 24px 0px 6px 0px;
+    color: tomato;
+}
+/*whk-item-content*/
+.whk-item-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6px;
+}
+/*whk-place*/
+.whk-place {
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+    padding: 6px;
+}
+
+/*place-name*/
+.place-name {
+    display: flex;
+    justify-content: center;
+    color: tomato;
+    font-weight: 900;
+    font-size: large;
+    padding: 8px;
+}
+
+/*place-llink*/
+.place-link {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.place-link ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0px;
+}
+
+/*place-img*/
+.place-img {
+    box-shadow: 0 8px 6px -6px black;
+    margin-bottom: 6px;
+}
+
+/*place-link-ul*/
+.place-link ul li {
+    background-color: tomato;
+    margin-right: 6px;
+    margin-top: 6px;
+    padding: 6px;
+}
+
+/*.place-link ul li:hover effects*/
+.place-link ul li:hover {
+    background-color: white;
+}
+.place-link ul li a {
+    color: white;
+    font-weight: 900;
+}
+/*.place-link ul li a:hover effects*/
+.place-link ul li a:hover {
+    color: black;
+}
+
+/*main-footer*/
+#main-footer{
+    padding: 20px;
+    background-color: #fff;
+    border-top: 6px solid tomato;
+}
+/*whk-footer*/
+.whk-footer {
+    padding: 8px;
+    background-color: tomato;
+}
+.whk-footer > div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/*whk-footer-links*/
+.whk-footer-links ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.whk-footer-links ul li {
+    text-align: center;
+    padding: 6px;
+    margin: 6px;
+    border: .5px solid white;
+}
+
+.whk-footer-links ul li:hover {
+    background-color: white;
+}
+
+.whk-footer-links ul li a{
+    color: white;
+    font-weight: bold;
+}
+.whk-footer-links ul li a:hover {
+    color: black;
+}
+/*whk-footer-h3*/
+.whk-footer-h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 24px 0px;
+    padding: 6px;
+}
+
+/*map buttons hover effects*/
+.mp-btn:hover {
+    background-color: white;
+    color: black;
+}
+/*All ul*/
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+/*all links*/
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: red;
+}
+a:active {
+    color: tomato;
+}
+a:hover {
+    color: black;
+}
+/*images*/
+img {
+    max-width: 200px;
+}
+/*whk-footer-sml*/
+#whk-footer-sml {
+    text-align: center;
+    margin-top: 66px;
+}
