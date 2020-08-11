@@ -24,11 +24,9 @@ h1, h2, h3, h4 {
 }
 
 #title {
-    color: rgb(228, 218, 216);
-    padding-top: 20px;
+    color: white;
+    margin-top: 66px;
     text-align: center;
-    font-size: xx-large;
-    font-weight: 900;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 4px;
 }
@@ -42,6 +40,7 @@ h1, h2, h3, h4 {
     padding: 24px 0px 6px 0px;
     color: tomato;
 }
+
 /*whk-item-content*/
 .whk-item-container{
     display: flex;
@@ -85,6 +84,8 @@ h1, h2, h3, h4 {
 .place-img {
     box-shadow: 0 8px 6px -6px black;
     margin-bottom: 6px;
+    max-width: 300px;
+    height: 200px;
 }
 
 /*place-link-ul*/
@@ -178,12 +179,18 @@ a:active {
 a:hover {
     color: black;
 }
-/*images*/
-img {
-    max-width: 200px;
-}
+
 /*whk-footer-sml*/
 #whk-footer-sml {
     text-align: center;
-    margin-top: 66px;
+    margin: 66px 0px 24px 0px;
+}
+
+/*media queries*/
+@media only screen and (min-width: 1024px) {
+    .place-img {max-width: 500px;}
+}
+
+@media only screen and (min-width: 1900px) {
+    .place-img {max-width: 700px;}
 }
