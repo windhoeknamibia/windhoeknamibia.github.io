@@ -62,11 +62,15 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center;
     color: tomato;
+    background-color: #ddd;
     font-weight: 900;
     font-size: large;
     padding: 8px;
 }
 
+.place-name:hover {
+  box-shadow: 0 0 2px 1px rgba(	255, 99, 71, 0.5);
+}
 /*place-llink*/
 .place-link {
     display: flex;
@@ -79,12 +83,21 @@ h1, h2, h3, h4 {
     list-style-type: none;
     padding: 0px;
 }
+/*all images*/
+img {
+  border-radius: 0px 0px 4px 4px;
+  padding: 0px;
+  max-width: 100%;
+}
 
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(	255, 99, 71, 0.5);
+}
 /*place-img*/
 .place-img {
     box-shadow: 0 8px 6px -6px black;
     margin-bottom: 6px;
-    max-width: 300px;
+    max-width: 35vw;
     height: 200px;
 }
 
@@ -187,10 +200,10 @@ a:hover {
 }
 
 /*media queries*/
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     .place-img {max-width: 500px;}
 }
 
 @media only screen and (min-width: 1900px) {
     .place-img {max-width: 700px;}
-}
+} */
