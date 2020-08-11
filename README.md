@@ -1,1 +1,1 @@
-# windhoeknamibia.github.io
+# windhoek namibia
