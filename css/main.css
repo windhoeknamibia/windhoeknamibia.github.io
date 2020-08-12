@@ -61,8 +61,8 @@ h1, h2, h3, h4 {
 
 /*place-name*/
 .place-name {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
     color: tomato;
     background-color: #ddd;
     font-weight: 900;
