@@ -1,3 +1,5 @@
+/*-- main styling */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,38 +11,78 @@ html {
 
 body {
     background-color: #fff;
-    margin: 0;
 }
-h1, h2, h3, h4 {
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: red;
+}
+a:active {
     color: tomato;
 }
+a:hover {
+    color: black;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(	255, 99, 71, 0.5);
+}
+
+/*all images*/
+img {
+  border-radius: 0px 0px 4px 4px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+/*
+Pseudo-selectors
+*/
 #main-header {
-    display: flex;
-    flex-flow: column nowrap;
-    flex-basis: auto;
     height: 100vh;
-    background: #000 url('https://timbuktutravel.imgix.net/2019/02/0-General-windhoek-namibia-timbuktu-travel.jpg?auto=compress%2Cformat&ixlib=php-1.1.0&q=50') no-repeat center;
+    background: tomato url('https://timbuktutravel.imgix.net/2019/02/0-General-windhoek-namibia-timbuktu-travel.jpg?auto=compress%2Cformat&ixlib=php-1.1.0&q=50') no-repeat center;
     background-size: cover;
-    border-bottom: 6px solid rgb(224, 206, 203);
+    border-bottom: 6px solid #ddd;
 }
 
 #title {
-    color: white;
-    margin-top: 66px;
+    color: #f8f8f8;
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 4px;
-    font-size: 48px;
+    font-size: 50px;
+    font-family: 'Concert One', cursive;
+    letter-spacing: 2px;
 }
-/*whk-intro*/
-.whk-intro > h2{
-    display: flex;
-    justify-content: center;
-    
+
+.scroll {
+    text-align: center;
 }
-.whk-h2 {
-    padding: 24px 0px 6px 0px;
+.scroll svg {
+    margin-top: 0px;
+    height: 100px;
+    width: 100%;
+}
+
+
+.whk-intro {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#call-out {
+    text-align: center;
+    font-size: 36px;
+    word-wrap: break-word;
+    padding: 6px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-bottom: 3px solid tomato;
     color: tomato;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
 }
 
 /*whk-item-content*/
@@ -51,28 +93,26 @@ h1, h2, h3, h4 {
     justify-content: center;
     padding: 6px;
 }
-/*whk-place*/
-.whk-place {
-    display: flex;
-    flex-direction: column;
-    margin: 6px;
-    padding: 6px;
-}
 
-/*place-name*/
+.whk-item-container > div {
+    margin: 6px;
+    max-width: 300px;
+    height: auto;
+}
+/*whk-place*/
 .place-name {
     text-align: center;
     word-wrap: break-word;
     color: tomato;
     background-color: #ddd;
     font-weight: 900;
-    font-size: large;
     padding: 8px;
 }
 
 .place-name:hover {
   box-shadow: 0 0 2px 1px rgba(	255, 99, 71, 0.5);
 }
+
 /*place-llink*/
 .place-link {
     display: flex;
@@ -85,21 +125,13 @@ h1, h2, h3, h4 {
     list-style-type: none;
     padding: 0px;
 }
-/*all images*/
-img {
-  border-radius: 0px 0px 4px 4px;
-  padding: 0px;
-  max-width: 100%;
-}
 
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(	255, 99, 71, 0.5);
-}
 /*place-img*/
 .place-img {
+    background-size: cover;
     box-shadow: 0 8px 6px -6px black;
     margin-bottom: 6px;
-    max-width: 35vw;
+    width: 300px;
     height: 200px;
 }
 
@@ -165,47 +197,23 @@ img:hover {
 }
 /*whk-footer-h3*/
 .whk-footer-h3 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    color: tomato;
     margin: 8px 0px 24px 0px;
     padding: 6px;
-}
-
-/*map buttons hover effects*/
-.mp-btn:hover {
-    background-color: white;
-    color: black;
-}
-/*All ul*/
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-/*all links*/
-a {
-    text-decoration: none;
-}
-a:visited {
-    color: red;
-}
-a:active {
-    color: tomato;
-}
-a:hover {
-    color: black;
 }
 
 /*whk-footer-sml*/
 #whk-footer-sml {
     text-align: center;
-    margin: 66px 0px 24px 0px;
+    color: tomato;
+    margin: 66px 0px 12px 0px;
 }
 
-/*media queries*/
-/* @media only screen and (min-width: 1024px) {
-    .place-img {max-width: 500px;}
+/*-- media queries---*/
+@media only screen and (max-width: 768px) {
+    .wrapper {
+    width: 100%;
+    margin: 0 auto;
 }
-
-@media only screen and (min-width: 1900px) {
-    .place-img {max-width: 700px;}
-} */
+}
