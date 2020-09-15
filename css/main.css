@@ -72,7 +72,6 @@ Pseudo-selectors
     margin-top: 0px;
     height: 100px;
     width: 100%;
-    transition: 2.5s linear;
     animation: float 1.8s infinite;
 }
 
