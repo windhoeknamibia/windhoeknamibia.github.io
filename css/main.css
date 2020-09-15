@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: #fff;
+    font-family: 'Architects Daughter', cursive;
 }
 a {
     text-decoration: none;
@@ -41,7 +42,7 @@ Pseudo-selectors
 */
 #main-header {
     height: 100vh;
-    background: tomato url('https://timbuktutravel.imgix.net/2019/02/0-General-windhoek-namibia-timbuktu-travel.jpg?auto=compress%2Cformat&ixlib=php-1.1.0&q=50') no-repeat center;
+    background: #E0E0E0 url('https://timbuktutravel.imgix.net/2019/02/0-General-windhoek-namibia-timbuktu-travel.jpg?auto=compress%2Cformat&ixlib=php-1.1.0&q=50') no-repeat center;
     background-size: cover;
     border-bottom: 6px solid #ddd;
 }
@@ -67,13 +68,22 @@ Pseudo-selectors
                0 20px 20px rgba(0,0,0,.15);
 }
 
-.scroll {
-    text-align: center;
-}
 .scroll svg {
     margin-top: 0px;
     height: 100px;
     width: 100%;
+    transition: 2.5s linear;
+    animation: float 1.8s infinite;
+}
+
+@keyframes float{
+ 0%, 50% {
+   transform: translateY(50px);
+   transform: translateY(-25px);
+ }
+ 100% {
+   transform: translateY(25px);
+ }
 }
 
 
@@ -172,7 +182,27 @@ Pseudo-selectors
 /*main-footer*/
 #main-footer{
     background-color: #fff;
+    margin-top: 80px;
     border-top: 6px solid tomato;
+    position: relative;
+}
+.scroll-top {
+  position: absolute;
+  right: 20px;
+  bottom: 50%;
+  font-display: grid;
+  place-items: center;
+  background-color: #fff;
+  color: #121212;
+  border-radius: 2px;
+  width: 30px;
+  height: 30px;
+}
+.scroll-top > a {
+  color: #121212 !important;
+}
+.scroll-top i {
+  color: #fff;
 }
 /*whk-footer*/
 .whk-footer {
