@@ -12,6 +12,7 @@ html {
 body {
     background-color: #fff;
     font-family: 'Architects Daughter', cursive;
+    transition: .3s linear;
 }
 a {
     text-decoration: none;
